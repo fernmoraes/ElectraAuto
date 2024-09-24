@@ -1,11 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import Error from './routes/Error.jsx'
 import Home from './routes/Home.jsx'
 import Produtos from './routes/Produtos.jsx'
 import Sobre from './routes/Sobre.jsx'
-import Login from './routes/Contato.jsx'
+import Login from './routes/Login.jsx'
+import Dashboard from './routes/Dashboard.jsx'
+import CadastrarProduto from './routes/CadastrarProduto.jsx'
+import Usuario from './routes/Usuario.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -19,6 +24,9 @@ const router = createBrowserRouter([
       {path:'/login', element:<Login/>},
       {path:'/dashboard',element:<Dashboard/>},
       {path:'/usuario', element:<Usuario/>},
+      {path: '/produtos', element: <Produtos />},
+      {path: '/sobre', element: <Sobre />},
+      {path: '/cadastrarproduto', element: <CadastrarProduto />}
     ]
     }
 ])
