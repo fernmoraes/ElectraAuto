@@ -39,5 +39,8 @@
 }
 
 .logoImg {
-
+    position: absolute;
+    width: 46px;
+    margin-block: 2vh;
+    left: 2.7%;
 }
