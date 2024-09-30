@@ -1,0 +1,107 @@
+li {
+    list-style-type: none;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.ecar1{
+    position: absolute;
+    width: 60%;
+    border-radius: 10%;
+    top: 15vh;
+
+}
+
+.title {
+    position: absolute;
+    color: var(--font-color4);
+    font-size: 30px;
+    filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.1));
+    top: 40vh;
+}
+
+.subtitle{
+    position:absolute;
+    color: var(--font-color4);
+    font-size: 18px;
+    top: 50vh;
+    filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.1));
+}
+
+.btnComprar {
+    position: absolute;
+    top: 60vh;
+    background-color: var(--color1);
+    border: none;
+    padding-block: 10px;
+    padding-inline: 21px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--font-color1);
+    font-size: 17px;
+    font-weight: 600;
+    transform:translate3d(-50%, -50%, 0);
+    filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.1));
+}
+
+.homeUnder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+}
+
+.card img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}

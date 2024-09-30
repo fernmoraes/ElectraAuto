@@ -6,14 +6,18 @@
 :root {
     --background-color: #f2f2f2;
     --color1: #FFDD77;
+    --color2: #7799ff;
+    --color3: #000;
     --font-color1: #444;
     --font-color2: #000;
     --font-color3: #FFDD77;
+    --font-color4: white;
 }
 
 * {
     /* font-family: "Poppins", sans-serif; */
     font-family: "DM Sans", sans-serif;
     /* font-family: "Merriweather", serif; */
-    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
