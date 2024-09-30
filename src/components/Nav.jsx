@@ -1,16 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../css/Base.css'
+import '../css/Nav.css'
+import ElectraAutoLogo from '../assets/ElectraAutoLogo.png'
+
 
 function Nav() {
   return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/produtos">Produtos</Link></li>
-        <li><Link to="/sobre">Sobre</Link></li>
-        <li><Link to="/login">Login</Link></li>
-      </ul>
-    </nav>
+    <>
+      <div className='navBar'>
+        <img src={ElectraAutoLogo} className='logoImg' />
+        <li><Link to="/" className='navLink'>Home</Link></li>
+        <li><Link to="/produtos" className='navLink'>Produtos</Link></li>
+        <li><Link to="/sobre" className='navLink'>Sobre</Link></li>
+        <li><Link to="/login" className='navLink'>Login</Link></li>
+      </div>
+    </>
   );
 }
 

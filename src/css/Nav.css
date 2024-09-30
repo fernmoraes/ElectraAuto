@@ -1,0 +1,43 @@
+.navBar {
+    height: 9vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    list-style-type: none;
+}
+
+.navLink {
+    text-decoration: none;
+    position: relative;
+    color: var(--font-color2);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.navLink:hover{
+    color : var(--font-color3);
+}
+
+.navLink::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--font-color3);
+    transition: 0.4s;
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
+.logoImg {
+
+}
