@@ -7,7 +7,6 @@ import Home from './routes/Home.jsx'
 import Produtos from './routes/Produtos.jsx'
 import Sobre from './routes/Sobre.jsx'
 import Login from './routes/Login.jsx'
-import Dashboard from './routes/Dashboard.jsx'
 import CadastrarProduto from './routes/CadastrarProduto.jsx'
 import Usuario from './routes/Usuario.jsx'
 
@@ -22,7 +21,6 @@ const router = createBrowserRouter([
     children:[
       {path:'/',element:<Home/>},
       {path:'/login', element:<Login/>},
-      {path:'/dashboard',element:<Dashboard/>},
       {path:'/usuario', element:<Usuario/>},
       {path: '/produtos', element: <Produtos />},
       {path: '/sobre', element: <Sobre />},
