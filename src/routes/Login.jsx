@@ -11,7 +11,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     function validade(){
-        for(let i=0; i < usuarios.current; i++){
+        for(let i=0; i < usuarios.length; i++){
             if(
                 usuarios[i].usuario == usuario.current.value &&
                 usuarios[i].senha == senha.current.value
@@ -29,21 +29,29 @@ const Login = () => {
                 Math.random().toString(16).substring(2)
                 sessionStorage.setItem('usuario',usuario.current.value);
                 sessionStorage.setItem('senha',token)
-                navigate('/dashboard')
+                navigate('/cadastrarprodutos')
+                alert('Login Efetuado :D')
         }else{
             alert('usuario/senha inválidos')
         }
     }
 
     useEffect(()=>{
-        fetch('http//localhost:5000/usuarios/')
+        //vai na api e tras os dados via url
+        fetch("http://localhost:5000/usuarios/")
+        //promise
         .then((res)=>{
             return res.json();
         })
+        //receber as alterações
         .then((res)=>{
             setUsuarios(res)
         })
-    },[])
+        //retorna um array vazio
+     },[])
+
+
+
     return (
         <div className='loginStyle'>
             <section className="container">
