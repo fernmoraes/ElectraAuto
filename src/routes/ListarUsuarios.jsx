@@ -8,9 +8,6 @@ const ListarUsuarios=()=>{
     //Hook- useState
     const [usuarios, setUsuarios] = useState([]);
 
-
-    //criando a função handleDelete
-
     const handleDelete =(id)=>{
         fetch(`http://localhost:5000/usuarios/${id}`,{
             method:'delete',
@@ -38,8 +35,6 @@ const ListarUsuarios=()=>{
         })
         //retorna um array vazio
     }, [])
-
-
 
     return(
         <section className="listarUsuario">

@@ -3,7 +3,6 @@ import '../css/Sobre.css'
 import Video from '../assets/AboutUsBackgroundVideo.mp4'
 import { Link } from 'react-router-dom'
 
-/* Video não incluso */
 
 const Sobre = () => {
     return(

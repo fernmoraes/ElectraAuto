@@ -28,7 +28,7 @@ const carData = [
     {
         id: 3,
         name: "E-JS1-24/25",
-        imgSrc: Produto3, // Use your image path here
+        imgSrc: Produto3,
         price: "R$ 140,000",
         chargingTime: "1h05 min",
         acceleration: "9.0s",
@@ -37,7 +37,7 @@ const carData = [
     {
         id: 4,
         name: "E-JS1-EXT",
-        imgSrc: Produto4, // Use your image path here
+        imgSrc: Produto4,
         price: "R$ 140,000",
         chargingTime: "1h10 min",
         acceleration: "6.5s",
@@ -46,13 +46,12 @@ const carData = [
     {
         id: 5,
         name: "E-JS4",
-        imgSrc: Produto5, // Use your image path here
+        imgSrc: Produto5,
         price: "R$ 160,000",
         chargingTime: "1h20 min",
         acceleration: "7.5s",
         battery: "55 kWh",
     },
-    // Add more cars here
   ];
 
 const Produtos = () => {
