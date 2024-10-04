@@ -1,5 +1,4 @@
 .footer {
-    color: var(--font-color2);
     border-top: 2px solid var(--color3);
     position: absolute;
     width: 100%;
@@ -7,4 +6,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.websitesIcons{
+    display: flex;
+    gap: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-link {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: var(--color3);
+}
+
+.icon-link:hover {
+    transform: scale(1.2);
+    color: var(--color1);
 }
