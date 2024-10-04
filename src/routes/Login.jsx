@@ -29,7 +29,7 @@ const Login = () => {
                 Math.random().toString(16).substring(2)
                 sessionStorage.setItem('usuario',usuario.current.value);
                 sessionStorage.setItem('senha',token)
-                navigate('/cadastrarprodutos')
+                navigate('/cadastrarproduto')
                 alert('Login Efetuado :D')
         }else{
             alert('usuario/senha inválidos')
